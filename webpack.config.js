@@ -9,6 +9,9 @@ console.log(mode, 'meeeeeeeeee')
 module.exports = {
     mode: mode,
     devtool: "source-map",
+    output: {
+        assetModuleFilename: "images/[hash][ext][query]"
+    },
     module:{
         rules: [
             {
@@ -21,7 +24,11 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset',
+            },
         ]
     },
     plugins: [
@@ -32,7 +39,7 @@ module.exports = {
     },
     devServer: {
         static: "./dist",
-        hot: true
+       // hot: true
     }
 }
 

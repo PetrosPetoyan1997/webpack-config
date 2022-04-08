@@ -1,5 +1,4 @@
 import {useState} from "react";
-
 const elvenShieldRecipe = {
     leatherStrips: 2,
     ironIngot: 1,
@@ -31,6 +30,7 @@ const Recipes = ()=>{
                     </li>
                 ))}
             </ul>
+            <img src={require("../images/test.png")} alt={'iye icon'}/>
         </div>
     )
 }
