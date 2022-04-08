@@ -18,7 +18,7 @@ if(process.env.NODE_ENV === "production"){
 }else{
     plugins.push(new ReactRefreshWebpackPlugin())
 }
-console.log(mode, 'meeeeeeeeee')
+
 
 module.exports = {
     mode: mode,
