@@ -7,7 +7,7 @@ const App = ()=>{
             <section className="hero"></section>
             <main>
                 <section>
-`                    <h1>Oi, hi React 222</h1>
+`                    <h1>Oi, hi React</h1>
                 </section>
             </main>
 
